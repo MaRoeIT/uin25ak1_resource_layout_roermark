@@ -1,0 +1,57 @@
+@import "partials/colors";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header, article, div, aside, section, footer, main {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $gainsboro;
+}
+
+main, header{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 21px;
+}
+
+nav{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 195px 0 0 0;
+        li{
+            button{
+                border: none;
+                font-size: 1.5rem;
+                background-color: $darkslate_gray;
+                font-family: "Montserrat", serif;
+                font-weight: bold;
+                padding: 1.5rem 5.5rem;
+                color: $white;
+            }
+        }
+    }
+}
+
+main{
+    background-color: $white;
+    font-family: "Montserrat", serif;
+    article{
+        padding: 9rem 5.5rem;
+        h2{
+            margin: 0;
+            color: $darkslate_gray;
+        }
+    }
+}
