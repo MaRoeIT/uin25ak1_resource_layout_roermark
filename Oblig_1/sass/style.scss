@@ -40,6 +40,10 @@ nav{
                 padding: 1.5rem 5.5rem;
                 color: $white;
             }
+            button:hover{
+                background-color: $white;
+                color: $darkslate_gray;
+            }
         }
     }
 }
