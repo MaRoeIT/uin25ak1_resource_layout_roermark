@@ -22,4 +22,23 @@ function changeContent(contentTitle) {
     `
 
     document.getElementById("ResourceContent").innerHTML = resourceHTML;
+
+    selectedTabStyle(contentTitle);
+
+    
+}
+
+function selectedTabStyle(contentTitle){
+    const buttons = document.getElementsByTagName("button")
+    console.log(buttons)
+    
+    for(let k in buttons){
+        console.log(buttons[k].innerHTML)
+        if(buttons[k].innerHTML === contentTitle){
+            buttons[k].style.textDecoration = "underline white 2.5px"
+        }
+        else{
+            buttons[k].style.textDecorationLine = "none"
+        }
+    }
 }
