@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -36,7 +40,7 @@ nav{
                 background-color: $darkslate_gray;
                 font-family: "Montserrat", serif;
                 font-weight: bold;
-                padding: 1.5rem 5.5rem;
+                padding: 1.5rem calc(1px + 4.5vw);
                 color: $white;
             }
             button:hover{
@@ -61,4 +65,21 @@ main{
 
 .activeTab{
     text-decoration: underline $white 2.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav{
+        ul{
+            flex-direction: column;
+            margin-top: 0;
+            li{
+                button{
+                    border: 3px solid $gainsboro;
+                    border-radius: 20px;
+                    width: calc(100% - 20px);
+                    margin: 0 10px;
+                } 
+            }
+        }
+    }
 }
