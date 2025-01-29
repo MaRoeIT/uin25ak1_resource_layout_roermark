@@ -76,3 +76,9 @@ function generatArticleCardHTML(resource){
 createTabs();
 addClassOnSelectedTab();
 initializeContent();
+
+/** TODO:
+ *  [ ] - add try catch clause to handle cases where there is trouble getteing acsess or a category don't exist
+ *  [ ] - Simplify code
+ *  [ ] - Add functionality for handling larger amounts of data (this will have to be a mix of CSS and JavaScript changes)
+ * */
