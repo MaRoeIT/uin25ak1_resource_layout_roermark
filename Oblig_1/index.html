@@ -13,41 +13,17 @@
     <body>
         <header>
             <nav>
-                <ul id="tabs"><!--
-                    <li>
-                        <button onclick="changeContent('HTML')">HTML</button>
-                    </li>
-                    <li>
-                        <button onclick="changeContent('CSS')">CSS</button>
-                    </li>
-                    <li>
-                        <button onclick="changeContent('JavaScript')">JavaScript</button>
-                    </li>
-                    <li>
-                        <button onclick="changeContent('React')">React</button>
-                    </li>
-                    <li>
-                        <button onclick="changeContent('Sanity and headless CMS')">Sanity and headless CMS</button>
-                    </li>-->
-                </ul>
+                <!--Added id so the createTabs() function can easly get hold of this tag.
+                createTabs() generates li and button tags based on ressurser.resource as children of this tag-->
+                <ul id="tabs"></ul>
             </nav>
         </header>
         <main>
-            <article id="ResourceContent"><!--
-                <h2>HTML</h2>
-                <p>HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.</p>
-                <ul>
-                    <li>
-                        <a href="https://www.w3schools.com/html/">W3Schools</a>
-                    </li>
-                    <li>
-                        <a href="https://html.spec.whatwg.org/multipage/">HTML Living standard</a>
-                    </li>
-                    <li>
-                        <a href="https://html.com/">HTML.com Tutorials</a>
-                    </li>
-                </ul>-->
-            </article>
+            <!--Added id so multiple of functions in contentHandler can get hold of this tag.
+            The content of this article will be generated on startup by initializeContent()
+            and by changeContent(contentTitle) when buttons from the navigation are pressed
+            the content is based on values from ressurser.resources-->
+            <article id="ResourceContent"></article>
         </main>
     </body>
 </html>

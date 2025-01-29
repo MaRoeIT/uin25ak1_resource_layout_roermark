@@ -2,10 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    box-sizing: border-box;
-}
-
+//Base styling to make sure the browser won't interfere in my styling
 html, body{
     margin: 0;
     padding: 0;
@@ -19,6 +16,7 @@ body{
     background-color: $gainsboro;
 }
 
+//Sets the size for the site and a base font size
 main, header{
     width: 100%;
     max-width: 1600px;
@@ -26,6 +24,7 @@ main, header{
     font-size: 21px;
 }
 
+//All the navigation styling
 nav{
     ul{
         display: flex;
@@ -51,6 +50,7 @@ nav{
     }
 }
 
+//Stylizing the main box that contains the article itself
 main{
     background-color: $white;
     font-family: "Montserrat", serif;
@@ -63,10 +63,12 @@ main{
     }
 }
 
+//Adds styling for class activeTab that is set by the contentHandler based on current category
 .activeTab{
     text-decoration: underline $white 2.5px;
 }
 
+//Very simple mediaQueries to make the site aviable for phone use, this should be improved.
 @media only screen and (max-width: 1200px) {
     nav{
         ul{

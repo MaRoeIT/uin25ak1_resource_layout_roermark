@@ -1,3 +1,6 @@
+/**
+ * A library containing the content and categories ment to be displayed on the site.
+ */
 const resources = [
     {
         category: "HTML",
