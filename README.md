@@ -26,6 +26,7 @@ After initialization:
 ```
 
 ## Sources
-I have not taken inføring i programmering, and have learnt JavaScript by helping other students since i have quite a good grasp on other programming languages.
-I have used Intelisense for discovering most of the inbuilt functionality that JavaScript offers that i haven't used in other languages.
-For refferance on syntax i have used [w3schools](https://www.w3schools.com/) and the cheatSheets created in inføring i programmering that i have lent from another student.
+I have not taken inføring i programmering, and have learnt JavaScript by helping other students since i have quite a good grasp on other programming languages.<br>
+I have used Intelisense for discovering most of the inbuilt functionality that JavaScript offers that i haven't used in other languages.<br>
+For refferance on syntax i have used [w3schools](https://www.w3schools.com/) and the cheatSheets created in inføring i programmering that i have lent from another student.<br>
+---
