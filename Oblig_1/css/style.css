@@ -23,7 +23,6 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  flex-wrap: wrap;
   padding: 0;
   margin: 195px 0 0 0;
 }
@@ -51,4 +50,8 @@ main article {
 main article h2 {
   margin: 0;
   color: #2A324B;
+}
+
+.activeTab {
+  text-decoration: underline #fff 2.5px;
 }/*# sourceMappingURL=style.css.map */

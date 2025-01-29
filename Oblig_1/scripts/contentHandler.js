@@ -1,44 +1,56 @@
-function changeContent(contentTitle) {
+let resourceHTML = "";
+let currentCategory = resources[0].category;
 
-    let resourceHTML = "";
-    let sourcesHTML = "";
+function createTabs(){
+    const tabs = document.getElementById("tabs");
 
-    const filteredContent = resources.filter(
-        (resource) => contentTitle === resource.category
-    )
-
-    filteredContent[0].sources.map(source => sourcesHTML += 
+    resources.map((resource) => tabs.innerHTML +=
         `<li>
-            <a href="${source.url}">${source.title}</a>
+            <button onclick="changeContent('${resource.category}')">${resource.category}</button>
         </li>`
     )
+}
 
-    resourceHTML = `
-        <h2>${filteredContent[0].category}</h2>
-        <p>${filteredContent[0].text}</p>
-        <ul>
-            ${sourcesHTML}
-        </ul>
-    `
+function initialisingContent(){
+    resourceHTML = generatArticleCardHTML(resources[0])
+
+    document.getElementById("ResourceContent").innerHTML = resourceHTML;
+}
+
+function changeContent(contentTitle) {
+    currentCategory = contentTitle
+    const filteredContent = resources.filter(
+        (resource) => currentCategory === resource.category
+    )
+
+    resourceHTML = generatArticleCardHTML(filteredContent[0])
 
     document.getElementById("ResourceContent").innerHTML = resourceHTML;
 
-    selectedTabStyle(contentTitle);
-
-    
+    addClassOnSelectedTab();
 }
 
-function selectedTabStyle(contentTitle){
+function addClassOnSelectedTab(){
     const buttons = document.getElementsByTagName("button")
-    console.log(buttons)
     
-    for(let k in buttons){
-        console.log(buttons[k].innerHTML)
-        if(buttons[k].innerHTML === contentTitle){
-            buttons[k].style.textDecoration = "underline white 2.5px"
-        }
-        else{
-            buttons[k].style.textDecorationLine = "none"
-        }
+    for(i = 0; i < buttons.length; i++){
+        buttons[i].classList.toggle("activeTab", buttons[i].innerHTML === currentCategory)
     }
 }
+
+function generatArticleCardHTML(resource){
+    return `
+    <h2>${resource.category}</h2>
+    <p>${resource.text}</p>
+    <ul>
+        ${resource.sources.map(source => 
+            `<li>
+                <a href="${source.url}">${source.title}</a>
+            </li>`
+        ).join(``)}
+    </ul>`
+}
+
+createTabs();
+addClassOnSelectedTab();
+initialisingContent();

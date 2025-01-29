@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="css/style.css">
-        <script src="scripts/contentHandler.js"></script>
+        <script src="scripts/contentHandler.js" defer></script>
         <script src="scripts/ressurser.js"></script>
 
         <title>Ressursarkiv</title>
@@ -13,27 +13,27 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <ul id="tabs"><!--
                     <li>
-                        <button class="navBtn" onclick="changeContent('HTML')">HTML</button>
+                        <button onclick="changeContent('HTML')">HTML</button>
                     </li>
                     <li>
-                        <button class="navBtn" onclick="changeContent('CSS')">CSS</button>
+                        <button onclick="changeContent('CSS')">CSS</button>
                     </li>
                     <li>
-                        <button class="navBtn" onclick="changeContent('JavaScript')">JavaScript</button>
+                        <button onclick="changeContent('JavaScript')">JavaScript</button>
                     </li>
                     <li>
-                        <button class="navBtn" onclick="changeContent('React')">React</button>
+                        <button onclick="changeContent('React')">React</button>
                     </li>
                     <li>
-                        <button class="navBtn" onclick="changeContent('Sanity and headless CMS')">Sanity and headless CMS</button>
-                    </li>
+                        <button onclick="changeContent('Sanity and headless CMS')">Sanity and headless CMS</button>
+                    </li>-->
                 </ul>
             </nav>
         </header>
         <main>
-            <article id="ResourceContent">
+            <article id="ResourceContent"><!--
                 <h2>HTML</h2>
                 <p>HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.</p>
                 <ul>
@@ -46,7 +46,7 @@
                     <li>
                         <a href="https://html.com/">HTML.com Tutorials</a>
                     </li>
-                </ul>
+                </ul>-->
             </article>
         </main>
     </body>
