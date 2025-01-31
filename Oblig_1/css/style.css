@@ -35,10 +35,6 @@ nav ul li button {
   padding: 1.5rem calc(1px + 4.5vw);
   color: #fff;
 }
-nav ul li button:hover {
-  background-color: #fff;
-  color: #2A324B;
-}
 
 main {
   background-color: #fff;
@@ -53,7 +49,9 @@ main article h2 {
 }
 
 .activeTab {
-  text-decoration: underline #fff 2.5px;
+  text-decoration: underline #2A324B 2.5px;
+  background-color: #fff;
+  color: #2A324B;
 }
 
 @media only screen and (max-width: 1200px) {

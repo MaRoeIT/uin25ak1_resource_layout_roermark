@@ -42,10 +42,6 @@ nav{
                 padding: 1.5rem calc(1px + 4.5vw);
                 color: $white;
             }
-            button:hover{
-                background-color: $white;
-                color: $darkslate_gray;
-            }
         }
     }
 }
@@ -65,7 +61,9 @@ main{
 
 //Adds styling for class activeTab that is set by the contentHandler based on current category
 .activeTab{
-    text-decoration: underline $white 2.5px;
+    text-decoration: underline $darkslate_gray 2.5px;
+    background-color: $white;
+    color: $darkslate_gray;
 }
 
 //Very simple mediaQueries to make the site aviable for phone use, this should be improved.
